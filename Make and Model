@@ -1,0 +1,7 @@
+make <- read.csv("Sales Supply Make CSV.csv")
+make_regress <- lm(make$Sales ~ make$Make + make$SRPVs)
+summary(make_regress)
+
+model <- read.csv("Sales Supply Model CSV".csv)
+model_regress <- lm(make$Sales ~ make$Model + make$SRPVs)
+summary(model_regress)
