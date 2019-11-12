@@ -1,12 +1,12 @@
 #Make Sales and Supply
-make <- read.csv("Sales_Supply_Make.csv")
-make_regress <- lm(make$Sales ~ make$SRPVs + make$Make)
+make <- read.csv("Sales_Supply_Make2.csv")
+make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
 summary(make_regress)
 
 #Model Sales and Supply
 options(max.print=1000000)
-model <- read.csv("Sales_Supply_Model.csv")
-model_regress <- lm(model$Sales ~ model$Model + model$SRPVs)
+model <- read.csv("Sales_Supply_Model2.csv")
+model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs  model$Model)
 summary(model_regress)
 
 #Sales vs. Supply
