@@ -1,7 +1,8 @@
-make <- read.csv("Sales Supply Make CSV.csv")
-make_regress <- lm(make$Sales ~ make$Make + make$SRPVs)
+make <- read.csv("Sales_Supply_Make.csv")
+make_regress <- lm(make$Sales ~ make$SRPVs + make$Make)
 summary(make_regress)
 
-model <- read.csv("Sales Supply Model CSV".csv)
-model_regress <- lm(make$Sales ~ make$Model + make$SRPVs)
+options(max.print=1000000)
+model <- read.csv("Sales_Supply_Model.csv")
+model_regress <- lm(model$Sales ~ model$Model + model$SRPVs)
 summary(model_regress)
