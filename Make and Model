@@ -6,7 +6,7 @@ summary(make_regress)
 #Model Sales and Supply
 options(max.print=1000000)
 model <- read.csv("Sales_Supply_Model2.csv")
-model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs  model$Model)
+model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs + model$Model)
 summary(model_regress)
 
 #Sales vs. Supply
