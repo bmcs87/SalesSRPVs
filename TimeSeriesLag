@@ -1,0 +1,24 @@
+#Macro Sales and Supply - No Lag
+macro <- read.csv("Sales_Supply.csv")
+macro_regress <- lm(macro$Vehicle.Sales ~ macro$SRPVs)
+summary(macro_regress)
+
+#Macro Sales and Supply - One month time lapse
+macro <- read.csv("Sales_Supply.csv")
+macro_regress <- lm(macro$Vehicle.Sales_1monthDelay ~ macro$SRPVs)
+summary(macro_regress)
+
+#Macro Sales and Supply - Two month time lapse
+macro <- read.csv("Sales_Supply.csv")
+macro_regress <- lm(macro$Vehicle.Sales_2monthDelay ~ macro$SRPVs)
+summary(macro_regress)
+
+#Macro Sales and Supply - Three month time lapse
+macro <- read.csv("Sales_Supply.csv")
+macro_regress <- lm(macro$Vehicle.Sales_3monthDelay ~ macro$SRPVs)
+summary(macro_regress)
+
+#Macro Sales and Supply - Four month time lapse
+macro <- read.csv("Sales_Supply.csv")
+macro_regress <- lm(macro$Vehicle.Sales_4monthDelay ~ macro$SRPVs)
+summary(macro_regress)
