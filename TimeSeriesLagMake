@@ -1,10 +1,10 @@
-#Make Sales and Supply - Two month time lapse
-make <- read.csv("Sales_Supply_Make2_2monthDelay.csv")
+#Make Sales and Supply - One month time lapse
+make <- read.csv("Sales_Supply_Make2_1monthDelay.csv")
 make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
 summary(make_regress)
 
-#Make Sales and Supply - One month time lapse
-make <- read.csv("Sales_Supply_Make2_1monthDelay.csv")
+#Make Sales and Supply - Two month time lapse
+make <- read.csv("Sales_Supply_Make2_2monthDelay.csv")
 make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
 summary(make_regress)
 
