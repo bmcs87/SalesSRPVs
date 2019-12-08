@@ -20,17 +20,17 @@ summary(new_regress)
 
 #New Make Sales and Supply - Two month time lapse
 new <- read.csv("SS_NewV_2M.csv")
-make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
-summary(make_regress)
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs + new$Make)
+summary(new_regress)
 
 
 #New Make Sales and Supply - Three month time lapse
 new <- read.csv("SS_NewV_3M.csv")
-make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
-summary(make_regress)
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs + new$Make)
+summary(new_regress)
 
 
 #New Make Sales and Supply - Four month time lapse
 new <- read.csv("SS_NewV_4M.csv")
-make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
-summary(make_regress)
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs + new$Make)
+summary(new_regress)
