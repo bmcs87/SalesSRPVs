@@ -1,0 +1,36 @@
+#New Sales and Supply - ALL CLASSES & Makes
+new <- read.csv("SS_NewV.csv")
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs)
+summary(new_regress)
+
+***************************************************************
+#Economy
+#New Sales and Supply - ALL MAKES
+new <- read.csv("SS_NewV_Econ.csv")
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs)
+summary(new_regress)
+
+***************************************************************
+#Makes
+#New Make Sales and Supply - One month time lapse
+new <- read.csv("SS_NewV_1M.csv")
+new_regress <- lm(new$Vehicle.Sales ~ new$SRPVs + new$Make)
+summary(new_regress)
+
+
+#New Make Sales and Supply - Two month time lapse
+new <- read.csv("SS_NewV_2M.csv")
+make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
+summary(make_regress)
+
+
+#New Make Sales and Supply - Three month time lapse
+new <- read.csv("SS_NewV_3M.csv")
+make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
+summary(make_regress)
+
+
+#New Make Sales and Supply - Four month time lapse
+new <- read.csv("SS_NewV_4M.csv")
+make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
+summary(make_regress)
