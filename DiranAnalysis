@@ -1,0 +1,374 @@
+#All Marketplace + ALL
+#ALL Sales and Supply - No Lag
+allallno <- read.csv("AllMkt_All_NoLag.csv")
+allallno_regress <- lm(allallno$Sales ~ allallno$SRPVs)
+summary(allallno_regress)
+
+#ALL Sales and Supply - 1M
+allall1 <- read.csv("AllMkt_All_1M.csv")
+allall1_regress <- lm(allall1$Sales ~ allall1$SRPVs)
+summary(allall1_regress)
+
+#ALL Sales and Supply - 2M
+allall2 <- read.csv("AllMkt_All_2M.csv")
+allall2_regress <- lm(allall2$Sales ~ allall2$SRPVs)
+summary(allall2_regress)
+
+#ALL Sales and Supply - 3M
+allall3 <- read.csv("AllMkt_All_3M.csv")
+allall3_regress <- lm(allall3$Sales ~ allall3$SRPVs)
+summary(allall3_regress)
+
+#ALL Sales and Supply - 4M
+allall4 <- read.csv("AllMkt_All_4M.csv")
+allall4_regress <- lm(allall4$Sales ~ allall4$SRPVs)
+summary(allall4_regress)
+
+#ALL Sales and Supply - 5M
+allall5 <- read.csv("AllMkt_All_5M.csv")
+allall5_regress <- lm(allall5$Sales ~ allall5$SRPVs)
+summary(allall5_regress)
+
+
+#####################################################
+
+#All Marketplace + New
+#ALL Sales and Supply - No Lag
+allnewno <- read.csv("AllMkt_New_NoLag.csv")
+allnewno_regress <- lm(allnewno$Sales ~ allnewno$SRPVs)
+summary(allnewno_regress)
+
+#ALL Sales and Supply - 1M
+allnew1 <- read.csv("AllMkt_New_1M.csv")
+allnew1_regress <- lm(allnew1$Sales ~ allnew1$SRPVs)
+summary(allnew1_regress)
+
+#ALL Sales and Supply - 2M
+allnew2 <- read.csv("AllMkt_New_2M.csv")
+allnew2_regress <- lm(allnew2$Sales ~ allnew2$SRPVs)
+summary(allnew2_regress)
+
+#ALL Sales and Supply - 3M
+allnew3 <- read.csv("AllMkt_New_3M.csv")
+allnew3_regress <- lm(allnew3$Sales ~ allnew3$SRPVs)
+summary(allnew3_regress)
+
+#ALL Sales and Supply - 4M
+allnew4 <- read.csv("AllMkt_New_4M.csv")
+allnew4_regress <- lm(allnew4$Sales ~ allnew4$SRPVs)
+summary(allnew4_regress)
+
+#ALL Sales and Supply - 5M
+allnew5 <- read.csv("AllMkt_New_5M.csv")
+allnew5_regress <- lm(allnew5$Sales ~ allnew5$SRPVs)
+summary(allnew5_regress)
+
+
+#####################################################
+
+#All Marketplace + Used
+#ALL Sales and Supply - No Lag
+allusedno <- read.csv("AllMkt_Used_NoLag.csv")
+allusedno_regress <- lm(allusedno$Sales ~ allusedno$SRPVs)
+summary(allusedno_regress)
+
+#ALL Sales and Supply - 1M
+allused1 <- read.csv("AllMkt_Used_1M.csv")
+allused1_regress <- lm(allused1$Sales ~ allused1$SRPVs)
+summary(allused1_regress)
+
+#ALL Sales and Supply - 2M
+allused2 <- read.csv("AllMkt_Used_2M.csv")
+allused2_regress <- lm(allused2$Sales ~ allused2$SRPVs)
+summary(allused2_regress)
+
+#ALL Sales and Supply - 3M
+allused3 <- read.csv("AllMkt_Used_3M.csv")
+allused3_regress <- lm(allused3$Sales ~ allused3$SRPVs)
+summary(allused3_regress)
+
+#ALL Sales and Supply - 4M
+allused4 <- read.csv("AllMkt_Used_4M.csv")
+allused4_regress <- lm(allused4$Sales ~ allused4$SRPVs)
+summary(allused4_regress)
+
+#ALL Sales and Supply - 5M
+allused5 <- read.csv("AllMkt_Used_5M.csv")
+allused5_regress <- lm(allused5$Sales ~ allused5$SRPVs)
+summary(allused5_regress)
+
+
+#####################################################
+
+#All Marketplace + Econ + New
+#ALL Sales and Supply - No Lag
+alleconnewno <- read.csv("AllMkt_Econ_New_NoLag.csv")
+alleconnewno_regress <- lm(alleconnewno$Sales ~ alleconnewno$SRPVs)
+summary(alleconnewno_regress)
+
+#ALL Sales and Supply - 1M
+alleconnew1 <- read.csv("AllMkt_Econ_New_1M.csv")
+alleconnew1_regress <- lm(alleconnew1$Sales ~ alleconnew1$SRPVs)
+summary(alleconnew1_regress)
+
+#ALL Sales and Supply - 2M
+alleconnew2 <- read.csv("AllMkt_Econ_New_2M.csv")
+alleconnew2_regress <- lm(alleconnew2$Sales ~ alleconnew2$SRPVs)
+summary(alleconnew2_regress)
+
+#ALL Sales and Supply - 3M
+alleconnew3 <- read.csv("AllMkt_Econ_New_3M.csv")
+alleconnew3_regress <- lm(alleconnew3$Sales ~ alleconnew3$SRPVs)
+summary(alleconnew3_regress)
+
+#ALL Sales and Supply - 4M
+alleconnew4 <- read.csv("AllMkt_Econ_New_4M.csv")
+alleconnew4_regress <- lm(alleconnew4$Sales ~ alleconnew4$SRPVs)
+summary(alleconnew4_regress)
+
+#ALL Sales and Supply - 5M
+alleconnew5 <- read.csv("AllMkt_Econ_New_5M.csv")
+alleconnew5_regress <- lm(alleconnew5$Sales ~ alleconnew5$SRPVs)
+summary(alleconnew5_regress)
+
+
+
+#####################################################
+
+#All Marketplace + Econ + Used
+#ALL Sales and Supply - No Lag
+alleconusedno <- read.csv("AllMkt_Econ_Used_NoLag.csv")
+alleconusedno_regress <- lm(alleconusedno$Sales ~ alleconusedno$SRPVs)
+summary(alleconusedno_regress)
+
+#ALL Sales and Supply - 1M
+alleconused1 <- read.csv("AllMkt_Econ_Used_1M.csv")
+alleconused1_regress <- lm(alleconused1$Sales ~ alleconused1$SRPVs)
+summary(alleconused1_regress)
+
+#ALL Sales and Supply - 2M
+alleconused2 <- read.csv("AllMkt_Econ_Used_2M.csv")
+alleconused2_regress <- lm(alleconused2$Sales ~ alleconused2$SRPVs)
+summary(alleconused2_regress)
+
+#ALL Sales and Supply - 3M
+alleconused3 <- read.csv("AllMkt_Econ_Used_3M.csv")
+alleconused3_regress <- lm(alleconused3$Sales ~ alleconused3$SRPVs)
+summary(alleconused3_regress)
+
+#ALL Sales and Supply - 4M
+alleconused4 <- read.csv("AllMkt_Econ_Used_4M.csv")
+alleconused4_regress <- lm(alleconused4$Sales ~ alleconused4$SRPVs)
+summary(alleconused4_regress)
+
+#ALL Sales and Supply - 5M
+alleconused5 <- read.csv("AllMkt_Econ_Used_5M.csv")
+alleconused5_regress <- lm(alleconused5$Sales ~ alleconused5$SRPVs)
+summary(alleconused5_regress)
+
+
+
+
+#####################################################
+
+#All Marketplace + Lux + New
+#ALL Sales and Supply - No Lag
+allluxnewno <- read.csv("AllMkt_Lux_New_NoLag.csv")
+allluxnewno_regress <- lm(allluxnewno$Sales ~ allluxnewno$SRPVs)
+summary(allluxnewno_regress)
+
+#ALL Sales and Supply - 1M
+allluxnew1 <- read.csv("AllMkt_Lux_New_1M.csv")
+allluxnew1_regress <- lm(allluxnew1$Sales ~ allluxnew1$SRPVs)
+summary(allluxnew1_regress)
+
+#ALL Sales and Supply - 2M
+allluxnew2 <- read.csv("AllMkt_Lux_New_2M.csv")
+allluxnew2_regress <- lm(allluxnew2$Sales ~ allluxnew2$SRPVs)
+summary(allluxnew2_regress)
+
+#ALL Sales and Supply - 3M
+allluxnew3 <- read.csv("AllMkt_Lux_New_3M.csv")
+allluxnew3_regress <- lm(allluxnew3$Sales ~ allluxnew3$SRPVs)
+summary(allluxnew3_regress)
+
+#ALL Sales and Supply - 4M
+allluxnew4 <- read.csv("AllMkt_Lux_New_4M.csv")
+allluxnew4_regress <- lm(allluxnew4$Sales ~ allluxnew4$SRPVs)
+summary(allluxnew4_regress)
+
+#ALL Sales and Supply - 5M
+allluxnew5 <- read.csv("AllMkt_Lux_New_5M.csv")
+allluxnew5_regress <- lm(allluxnew5$Sales ~ allluxnew5$SRPVs)
+summary(allluxnew5_regress)
+
+
+
+#####################################################
+
+#All Marketplace + Lux + Used
+#ALL Sales and Supply - No Lag
+allluxusedno <- read.csv("AllMkt_Lux_Used_NoLag.csv")
+allluxusedno_regress <- lm(allluxusedno$Sales ~ allluxusedno$SRPVs)
+summary(allluxusedno_regress)
+
+#ALL Sales and Supply - 1M
+allluxused1 <- read.csv("AllMkt_Lux_Used_1M.csv")
+allluxused1_regress <- lm(allluxused1$Sales ~ allluxused1$SRPVs)
+summary(allluxused1_regress)
+
+#ALL Sales and Supply - 2M
+allluxused2 <- read.csv("AllMkt_Lux_Used_2M.csv")
+allluxused2_regress <- lm(allluxused2$Sales ~ allluxused2$SRPVs)
+summary(allluxused2_regress)
+
+#ALL Sales and Supply - 3M
+allluxused3 <- read.csv("AllMkt_Lux_Used_3M.csv")
+allluxused3_regress <- lm(allluxused3$Sales ~ allluxused3$SRPVs)
+summary(allluxused3_regress)
+
+#ALL Sales and Supply - 4M
+allluxused4 <- read.csv("AllMkt_Lux_Used_4M.csv")
+allluxused4_regress <- lm(allluxused4$Sales ~ allluxused4$SRPVs)
+summary(allluxused4_regress)
+
+#ALL Sales and Supply - 5M
+allluxused5 <- read.csv("AllMkt_Lux_Used_5M.csv")
+allluxused5_regress <- lm(allluxused5$Sales ~ allluxused5$SRPVs)
+summary(allluxused5_regress)
+
+
+
+#####################################################
+
+#OOCore Econ
+#OOCore Sales and Supply - No Lag
+ooEconNo <- read.csv("OOCore_Econ_NoLag.csv")
+ooEconNo_regress <- lm(ooEconNo$Sales ~ ooEconNo$SRPVs)
+summary(ooEconNo_regress)
+
+#OOCore Sales and Supply - 1M
+ooEcon1 <- read.csv("OOCore_Econ_1M.csv")
+ooEcon1_regress <- lm(ooEcon1$Sales ~ ooEcon1$SRPVs)
+summary(ooEcon1_regress)
+
+#OOCore Sales and Supply - 2M
+ooEcon2 <- read.csv("OOCore_Econ_2M.csv")
+ooEcon2_regress <- lm(ooEcon2$Sales ~ ooEcon2$SRPVs)
+summary(ooEcon2_regress)
+
+#OOCore Sales and Supply - 3M
+ooEcon3 <- read.csv("OOCore_Econ_3M.csv")
+ooEcon3_regress <- lm(ooEcon3$Sales ~ ooEcon3$SRPVs)
+summary(ooEcon3_regress)
+
+#OOCore Sales and Supply - 4M
+ooEcon4 <- read.csv("OOCore_Econ_4M.csv")
+ooEcon4_regress <- lm(ooEcon4$Sales ~ ooEcon4$SRPVs)
+summary(ooEcon4_regress)
+
+
+
+#####################################################
+
+#OOCore Lux
+#OOCore Sales and Supply - No Lag
+ooLuxNo <- read.csv("OOCore_Lux_NoLag.csv")
+ooLuxNo_regress <- lm(ooLuxNo$Sales ~ ooLuxNo$SRPVs)
+summary(ooLuxNo_regress)
+
+#OOCore Sales and Supply - 1M
+ooLux1 <- read.csv("OOCore_Lux_1M.csv")
+ooLux1_regress <- lm(ooLux1$Sales ~ ooLux1$SRPVs)
+summary(ooLux1_regress)
+
+#OOCore Sales and Supply - 2M
+ooLux2 <- read.csv("OOCore_Lux_2M.csv")
+ooLux2_regress <- lm(ooLux2$Sales ~ ooLux2$SRPVs)
+summary(ooLux2_regress)
+
+#OOCore Sales and Supply - 3M
+ooLux3 <- read.csv("OOCore_Lux_3M.csv")
+ooLux3_regress <- lm(ooLux3$Sales ~ ooLux3$SRPVs)
+summary(ooLux3_regress)
+
+#OOCore Sales and Supply - 4M
+ooLux4 <- read.csv("OOCore_Lux_4M.csv")
+ooLux4_regress <- lm(ooLux4$Sales ~ ooLux4$SRPVs)
+summary(ooLux4_regress)
+
+#OOCore Sales and Supply - 5M
+ooLux5 <- read.csv("OOCore_Lux_5M.csv")
+ooLux5_regress <- lm(ooLux5$Sales ~ ooLux5$SRPVs)
+summary(ooLux5_regress)
+
+
+
+#####################################################
+
+#Synd Econ 
+#Synd Sales and Supply - No Lag
+SyndEconNo <- read.csv("Synd_Econ_NoLag.csv")
+SyndEconNo_regress <- lm(SyndEconNo$Sales ~ SyndEconNo$SRPVs)
+summary(SyndEconNo_regress)
+
+#Synd Sales and Supply - 1M
+SyndEcon1 <- read.csv("Synd_Econ_1M.csv")
+SyndEcon1_regress <- lm(SyndEcon1$Sales ~ SyndEcon1$SRPVs)
+summary(SyndEcon1_regress)
+
+#Synd Sales and Supply - 2M
+SyndEcon2 <- read.csv("Synd_Econ_2M.csv")
+SyndEcon2_regress <- lm(SyndEcon2$Sales ~ SyndEcon2$SRPVs)
+summary(SyndEcon2_regress)
+
+#Synd Sales and Supply - 3M
+SyndEcon3 <- read.csv("Synd_Econ_3M.csv")
+SyndEcon3_regress <- lm(SyndEcon3$Sales ~ SyndEcon3$SRPVs)
+summary(SyndEcon3_regress)
+
+#Synd Sales and Supply - 4M
+SyndEcon4 <- read.csv("Synd_Econ_4M.csv")
+SyndEcon4_regress <- lm(SyndEcon4$Sales ~ SyndEcon4$SRPVs)
+summary(SyndEcon4_regress)
+
+#Synd Sales and Supply - 5M
+SyndEcon5 <- read.csv("Synd_Econ_5M.csv")
+SyndEcon5_regress <- lm(SyndEcon5$Sales ~ SyndEcon5$SRPVs)
+summary(SyndEcon5_regress)
+
+
+
+
+#####################################################
+
+#Synd Lux 
+#Synd Sales and Supply - No Lag
+SyndLuxNo <- read.csv("Synd_Lux_NoLag.csv")
+SyndLuxNo_regress <- lm(SyndLuxNo$Sales ~ SyndLuxNo$SRPVs)
+summary(SyndLuxNo_regress)
+
+#Synd Sales and Supply - 1M
+SyndLux1 <- read.csv("Synd_Lux_1M.csv")
+SyndLux1_regress <- lm(SyndLux1$Sales ~ SyndLux1$SRPVs)
+summary(SyndLux1_regress)
+
+#Synd Sales and Supply - 2M
+SyndLux2 <- read.csv("Synd_Lux_2M.csv")
+SyndLux2_regress <- lm(SyndLux2$Sales ~ SyndLux2$SRPVs)
+summary(SyndLux2_regress)
+
+#Synd Sales and Supply - 3M
+SyndLux3 <- read.csv("Synd_Lux_3M.csv")
+SyndLux3_regress <- lm(SyndLux3$Sales ~ SyndLux3$SRPVs)
+summary(SyndLux3_regress)
+
+#Synd Sales and Supply - 4M
+SyndLux4 <- read.csv("Synd_Lux_4M.csv")
+SyndLux4_regress <- lm(SyndLux4$Sales ~ SyndLux4$SRPVs)
+summary(SyndLux4_regress)
+
+#Synd Sales and Supply - 5M
+SyndLux5 <- read.csv("Synd_Lux_5M.csv")
+SyndLux5_regress <- lm(SyndLux5$Sales ~ SyndLux5$SRPVs)
+summary(SyndLux5_regress)
