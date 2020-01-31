@@ -1,0 +1,28 @@
+#Model Sales and Supply
+model <- read.csv("SS_Models.csv")
+model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs + model$Model)
+summary(model_regress)
+
+
+#Model Sales and Supply - One month time lapse
+model1M <- read.csv("SS_Models_1monthDelay.csv")
+model_regress1M <- lm(model1M$Vehicle.Sales ~ model1M$SRPVs + model1M$Model)
+summary(model1M_regress)
+
+
+#Model Sales and Supply - Two month time lapse
+model2M <- read.csv("SS_Models_2monthDelay.csv")
+model_regress2M <- lm(model2M$Vehicle.Sales ~ model2M$SRPVs + model2M$Model)
+summary(model2M_regress)
+
+
+#Model Sales and Supply - Three month time lapse
+model3M <- read.csv("SS_Models_3monthDelay.csv")
+model_regress3M <- lm(model3M$Vehicle.Sales ~ model3M$SRPVs + model3M$Model)
+summary(model3M_regress)
+
+
+#Model Sales and Supply - Four month time lapse
+model4M <- read.csv("SS_Models_4monthDelay.csv")
+model_regress4M <- lm(model4M$Vehicle.Sales ~ model4M$SRPVs + model4M$Model)
+summary(model4M_regress)
