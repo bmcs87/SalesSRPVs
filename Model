@@ -1,3 +1,6 @@
+
+options(max.print = 10000)
+
 #Model Sales and Supply
 model <- read.csv("SS_Models.csv")
 model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs + model$Model)
