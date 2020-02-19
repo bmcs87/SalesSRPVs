@@ -1,0 +1,29 @@
+
+#Subaru Crosstrek Model Sales and Supply
+model <- read.csv("SS_Models_Crosstrek.csv")
+model_regress <- lm(model$Vehicle.Sales ~ model$SRPVs + model$Make)
+summary(model_regress)
+
+
+#Subaru Crosstrek Model Sales and Supply - One month time lapse
+model1m <- read.csv("SS_Models_Crosstrek_1MonthDelay.csv")
+model1m_regress <- lm(model1m$Vehicle.Sales ~ model1m$SRPVs + model1m$Make)
+summary(model1m_regress)
+
+
+#Subaru Crosstrek Model Sales and Supply - Two month time lapse
+model2m <- read.csv("SS_Models_Crosstrek_2MonthDelay.csv")
+model2m_regress <- lm(model2m$Vehicle.Sales ~ model2m$SRPVs + model2m$Make)
+summary(model2m_regress)
+
+
+#Subaru Crosstrek Model Sales and Supply - Three month time lapse
+model3m <- read.csv("SS_Models_Crosstrek_3MonthDelay.csv")
+model3m_regress <- lm(model3m$Vehicle.Sales ~ model3m$SRPVs + model3m$Make)
+summary(model3m_regress)
+
+
+#Subaru Crosstrek Model Sales and Supply - Four month time lapse
+model4m <- read.csv("SS_Models_Crosstrek_4MonthDelay.csv")
+model4m_regress <- lm(model4m$Vehicle.Sales ~ model4m$SRPVs + model4m$Make)
+summary(model4m_regress)
