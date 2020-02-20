@@ -1,1 +1,44 @@
+#Used Make Sales and Supply
+make <- read.csv("SS_Makes_Used.csv")
+make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
+summary(make_regress)
+
+par(mfrow = c(1,1))
+plot(make_regress)
+
+
+#Used Make Sales and Supply - One month time lapse
+make1m <- read.csv("SS_Makes_Used_1monthDelay.csv")
+make_regress1m <- lm(make1m$Vehicle.Sales ~ make1m$SRPVs + make1m$Make)
+summary(make_regress1m)
+
+par(mfrow = c(1,1))
+plot(make_regress1m)
+
+
+#Used Make Sales and Supply - Two month time lapse
+make2m <- read.csv("SS_Makes_Used_2monthDelay.csv")
+make_regress2m <- lm(make2m$Vehicle.Sales ~ make2m$SRPVs + make2m$Make)
+summary(make_regress2m)
+
+par(mfrow = c(1,1))
+plot(make_regress2m)
+
+
+#Used Make Sales and Supply - Three month time lapse
+make3m <- read.csv("SS_Makes_Used_3monthDelay.csv")
+make_regress3m <- lm(make3m$Vehicle.Sales ~ make3m$SRPVs + make3m$Make)
+summary(make_regress3m)
+
+par(mfrow = c(1,1))
+plot(make_regress3m)
+
+
+#Used Make Sales and Supply - Four month time lapse
+make4m <- read.csv("SS_Makes_Used_4monthDelay.csv")
+make_regress4m <- lm(make4m$Vehicle.Sales ~ make4m$SRPVs + make4m$Make)
+summary(make_regress4m)
+
+par(mfrow = c(1,1))
+plot(make_regress4m)
 
