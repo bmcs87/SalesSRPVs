@@ -1,3 +1,6 @@
+install.packages("MASS")
+library(MASS)
+
 #Used Make Sales and Supply
 make <- read.csv("SS_Makes_Used.csv")
 make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
@@ -5,6 +8,10 @@ summary(make_regress)
 
 par(mfrow = c(1,1))
 plot(make_regress)
+
+Used_Make_BC <- caret::BoxCoxTrans(make$Vehicle.Sales)
+print(Used_Make_BC)
+
 
 
 #Used Make Sales and Supply - One month time lapse
