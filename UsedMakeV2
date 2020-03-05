@@ -6,6 +6,8 @@ make <- read.csv("SS_Makes_UsedV2.csv")
 make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
 summary(make_regress)
 
+plot(make_regress, which=1)
+
 
 #Used Make Sales and Supply - One month time lapse
 make1m <- read.csv("SS_Makes_Used_1monthDelay.csv")
