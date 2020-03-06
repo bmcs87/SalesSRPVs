@@ -1,6 +1,10 @@
 ##Deleted negatives
 
-  
+install.packages("MASS")
+library(MASS)
+
+###############################################################
+
 #Used Make Sales and Supply
 make <- read.csv("SS_Makes_UsedV2.csv")
 make_regress <- lm(make$Vehicle.Sales ~ make$SRPVs + make$Make)
@@ -8,6 +12,22 @@ summary(make_regress)
 
 plot(make_regress, which=1)
 
+bc_make_regress <- boxcox(make_regress)
+
+which.max(bc_make_regress$y)
+
+lambda <-bc_make_regress$x[which.max(bc_make_regress$y)]
+lambda
+
+y <- bc_make_regress$y
+
+z <- y^lambda
+m2 <- lm(z ~ bc_make_regress$x)
+summary(m2)
+
+plot(m2, which=1)
+
+################################################################
 
 #Used Make Sales and Supply - One month time lapse
 make1m <- read.csv("SS_Makes_Used_1monthDelay.csv")
