@@ -1,28 +1,28 @@
 #Used Chev Sales and Supply
-Chev <- read.csv("SS_Chevs_Used.csv")
+Chev <- read.csv("SS_Chev_Used.csv")
 Chev_regress <- lm(Chev$Vehicle.Sales ~ Chev$SRPVs + Chev$Chev)
 summary(Chev_regress)
 
 
 #Used Chev Sales and Supply - One month time lapse
-Chev1m <- read.csv("SS_Chevs_Used_1monthDelay.csv")
+Chev1m <- read.csv("SS_Chev_Used_1monthDelay.csv")
 Chev_regress1m <- lm(Chev1m$Vehicle.Sales ~ Chev1m$SRPVs + Chev1m$Chev)
 summary(Chev_regress1m)
 
 
 #Used Chev Sales and Supply - Two month time lapse
-Chev2m <- read.csv("SS_Chevs_Used_2monthDelay.csv")
+Chev2m <- read.csv("SS_Chev_Used_2monthDelay.csv")
 Chev_regress2m <- lm(Chev2m$Vehicle.Sales ~ Chev2m$SRPVs + Chev2m$Chev)
 summary(Chev_regress2m)
 
 
 #Used Chev Sales and Supply - Three month time lapse
-Chev3m <- read.csv("SS_Chevs_Used_3monthDelay.csv")
+Chev3m <- read.csv("SS_Chev_Used_3monthDelay.csv")
 Chev_regress3m <- lm(Chev3m$Vehicle.Sales ~ Chev3m$SRPVs + Chev3m$Chev)
 summary(Chev_regress3m)
 
 
 #Used Chev Sales and Supply - Four month time lapse
-Chev4m <- read.csv("SS_Chevs_Used_4monthDelay.csv")
+Chev4m <- read.csv("SS_Chev_Used_4monthDelay.csv")
 Chev_regress4m <- lm(Chev4m$Vehicle.Sales ~ Chev4m$SRPVs + Chev4m$Chev)
 summary(Chev_regress4m)
